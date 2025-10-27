@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>Fetched Comments</h2>
+  <div id="output"></div> <!-- 👈 This was missing -->
+
+  <script>
+    // Simulating API Call with Promises
+    function orderFood() { 
+      return new Promise((resolve, reject) => {
+        console.log("Step 1: You order something to eat.");
+        setTimeout(() => {
+          console.log("Step 2: Kitchen prepares your food.");
+          resolve("Food is ready!");
+        }, 2000);
+      });
+    }
+
+    function serveFood() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          console.log("Step 3: Waiter brings food to your table.");
+          resolve();
+        }, 1000);
+      });
+    }
+
+    orderFood()
+      .then((message) => {
+        console.log(message);
+        return serveFood();
+      })
+      .then(() => {
+        console.log("Enjoy your meal!");
+      });
+  </script>
+
+  <script>
+    function fetchData() {
+      return new Promise((resolve, reject) => {
+        let success = true;
+        if (!success) {
+          reject("Error: Unable to fetch data from API.");
+          return;
+        }
+        console.log("Fetching data from API...");
+        setTimeout(() => {
+          const data = { id: 1, name: "John Doe" };
+          resolve(data);
+        }, 1500);
+      });
+    }
+
+    fetchData()
+      .then((data) => {
+        console.log("Data received from API:", data);
+      });
+  </script>
+
+  <script>
+    function fetchTodo() {
+      return fetch('https://jsonplaceholder.typicode.com/todos')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        });
+    }
+
+    fetchTodo()
+      .then(data => {
+        console.log("Todo item fetched from API:", data);
+      })
+      .catch(error => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
+  </script>
+
+
+
+
+
+
+
+
+
+  <script>
+    function fetchComments() {
+    return fetch('https://jsonplaceholder.typicode.com/comments')
+    .then(response => {
+    if (!response.ok) {
+    throw new Error('Network response was not ok ' + response.statusText);
+     }
+    return response.json();
+        });
+    }
+
+        fetchComments()
+        .then(data => {
+            let result = "";
+            for (let i = 0; i < 20; i++) {
+            result += `
+                <div style="margin-bottom:10px;">
+                <h3>${data[i].name}</h3>
+                <p><b>Email:</b> ${data[i].email}</p>
+                <p>${data[i].body}</p>
+                <hr>
+                </div>`;
+            }
+            document.getElementById("output").innerHTML = result;
+        })
+        .catch(error => {
+            document.getElementById("output").innerHTML = "Error: " + error.message;
+        });
+    </script>
+
+</body>
+</html>
