@@ -1,0 +1,42 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hero {
+  background: url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1200&q=60")
+    center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #1e3c72;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}

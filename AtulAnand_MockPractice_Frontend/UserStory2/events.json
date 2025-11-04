@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Summer Music Fest 2025",
+    "category": "Music",
+    "date": "2025-06-10",
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "description": "Dance under the stars with live bands, DJs, and endless summer vibes!"
+  },
+  {
+    "title": "Neon Nights Music Party",
+    "category": "Music",
+    "date": "2025-07-15",
+    "image": "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1200&q=60",
+    "description": "A wild night of lights, beats, and bass drops — where the party never ends!"
+  },
+  {
+    "title": "Tech Innovators Conference",
+    "category": "Tech",
+    "date": "2025-08-05",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=60",
+    "description": "Explore AI, blockchain, and the future of innovation with industry leaders."
+  },
+  {
+    "title": "Global Business Summit",
+    "category": "Business",
+    "date": "2025-09-12",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=60",
+    "description": "Where world leaders and entrepreneurs unite to shape tomorrow’s economy."
+  },
+  {
+    "title": "Art & Design Expo",
+    "category": "Art",
+    "date": "2025-10-18",
+    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1200&q=60",
+    "description": "Step into a world of creativity — live painting, digital art, and installations."
+  },
+  {
+    "title": "Galaxy Gaming Convention",
+    "category": "Gaming",
+    "date": "2025-11-20",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=60",
+    "description": "Meet top gamers, streamers, and dive into new releases and VR worlds."
+  }
+]
