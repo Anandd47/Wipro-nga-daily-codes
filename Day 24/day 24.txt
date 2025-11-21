@@ -1,0 +1,13 @@
+Why do we need validations? Are you using any one of them in your project ?
+ Diff between Authentication and Authorization ?
+Different types of authentication ?
+Implementing user authentication via some common methods 
+User name and password 
+Biometric 
+passkey(Hardware based key generator)
+JWT(token-based authentication)
+Using middleware for authentication (e.g., Passport.js)
+Managing user sessions and cookies ( Client side authentication )
+Types of client and server side authentication 
+Limitation of above authentication 
+Why is Role-based access control (RBAC) important in enterprise apps ?
